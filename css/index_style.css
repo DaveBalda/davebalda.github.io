@@ -233,6 +233,7 @@ main{
     column-gap: 75px;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 
@@ -372,9 +373,11 @@ main{
  * 1300px adjustment
 --------------------------------*/
 @media (max-width: 1300px){
-    #img_belts{
-        flex-direction: column;
-        row-gap: 40px;
+    #img_belts img{
+        width: 175px;
+    }
+    .main_style h1, .main_style h2, .main_style h3, .main_style p, .main_style label{
+        text-align: center;
     }
 }
 
@@ -405,12 +408,16 @@ main{
     #img_judo_kanji{
         display: none;
     }
+    #img_belts{
+        flex-direction: column;
+        row-gap: 40px;
+    }
 }
 
 /*--------------------------------
- * 690px adjustment
+ * 780px adjustment
 --------------------------------*/
-@media (max-width: 690px){
+@media (max-width: 780px){
     #img_sensei{
         width: 100%;
         
@@ -419,6 +426,12 @@ main{
 
         float: none;
     }
+}
+
+/*--------------------------------
+ * 690px adjustment
+--------------------------------*/
+@media (max-width: 690px){
     .main_sensei{
         display: flex;
         flex-direction: column;
@@ -428,7 +441,7 @@ main{
         justify-content: center;
     }
     .imgLogo{
-        width: 80%;
+        width: 70%;
     }
     .img_cont_tecn img{
         width: 100%;
@@ -448,26 +461,64 @@ main{
 }
 
 /*--------------------------------
+ * 450px adjustment (narrow)
+--------------------------------*/
+@media (max-width: 450px){
+    .main_style li{
+        font-size: 1.2em;
+    }
+    .main_style h1{
+        font-size: 1.9em;
+        color: green;
+    }
+    .main_style h2{
+        font-size: 1.3em;
+        color: green;
+    }
+    .main_style h3{
+        font-size: 1.3em;
+        color: black;
+        text-align: center;
+        font-style: italic;
+    }
+    .main_style p{
+        font-size: 1.2em;
+    }
+    .main_style label{
+        font-size: 1.3em;
+    }
+    .main_sensei h1{
+        text-align: center;
+    }
+    .footer h1{
+        font-size: 1.6em;
+    }
+    .footer h3{
+        font-size: 1.1em;
+    }
+
+    #img_belts img{
+        width: 100px;
+    }
+    #cont_btn{
+        display: block;
+        text-align: center;
+    }
+    .mobile_navbar #mobile_navbar_content{
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*--------------------------------
  * 380px adjustment (narrow)
 --------------------------------*/
 @media (max-width: 380px){
     .foot_socials_icons{
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 30px;
     }
     #menuBtn{
-        display: none;
-    }
-}
-
-/*--------------------------------
- * 315px adjustment (very narrow)
---------------------------------*/
-@media (max-width: 315px){
-    .imgLogo{
-        width: 150px;
-    }
-    #img_belts{
         display: none;
     }
 }

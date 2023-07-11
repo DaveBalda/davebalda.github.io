@@ -235,6 +235,9 @@ main{
     justify-content: center;
     text-align: center;
 }
+#cont_dan{
+    text-align: center;
+}
 
 
 /*--------------------------------
@@ -499,10 +502,6 @@ main{
 
     #img_belts img{
         width: 100px;
-    }
-    #cont_btn{
-        display: block;
-        text-align: center;
     }
     .mobile_navbar #mobile_navbar_content{
         font-size: 20px;

@@ -27,6 +27,12 @@ h3{
     justify-content: center;
 }
 
+/*
+ * MEDIA ADJUSTMENTS
+ * FOR RESPONSIVE CSS
+ *
+*/
+
 @media (max-width: 1540px){
     .img_row{
         display: flex;
@@ -36,6 +42,23 @@ h3{
         justify-content: center;
     }
 }
+
+@media (max-width: 900px){
+    h3{
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 550px){
+    h3{
+        font-size: 1em;
+    }
+}
+@media (max-width: 440px){
+    h3{
+        font-size: 0.8em;
+    }
+}
+
 @media (max-width: 525px){
     img{
         width: 100%;
